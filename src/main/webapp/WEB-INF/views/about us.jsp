@@ -17,6 +17,7 @@
 	rel="stylesheet"></script>
 <title>Insert title here</title>
 </head>
+<%@ include file="header.jsp"%>
 <body>
 </br>
 	<div class="jumbotron jumbotron-sm">
@@ -63,7 +64,7 @@
 				<p>
 					<img class="alignnone wp-image-128 size-large"
 						src="resources\images\restaurantbanner2.jpg"
-						alt="Fitness World" height="400" width="600">
+						alt=" " height="400" width="600">
 				</p>
 			</div>
 		</div>

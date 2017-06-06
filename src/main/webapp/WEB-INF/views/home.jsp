@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,8 +17,9 @@
 	rel="stylesheet"></script>
 <title>Insert title here</title>
 </head>
+<%@ include file="header.jsp"%>
 <body>
-</br>
+	</br>
 	<div class="container">
 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -34,28 +35,31 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive img-full" src="resources/images/tawa_naan_bread.jpg" alt=""  style="width: 100%;">
-					
-				</div>
+					<img class="img-responsive img-full"
+						src="resources/images/tawa_naan_bread.jpg" alt=""
+						style="width: 100%;">
 
-				<div class="item">
-		<img class="img-responsive img-full" src="resources\images\images.jpg" alt=""  style="width: 100%;">
 				</div>
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="resources\images\DSC05028.jpg" alt="" style="width: 100%;">
-						
+						src="resources/images/images.jpg" alt="" style="width: 100%;">
 				</div>
 
 				<div class="item">
-					<img class="img-responsive img-full" src="resources\images\noodle.jpg"
-						alt="" style="width: 100%;">
+					<img class="img-responsive img-full"
+						src="resources/images/DSC05028.jpg" alt="" style="width: 100%;">
+
 				</div>
 
 				<div class="item">
-					<img class="img-responsive img-full" src="resources\images\DSC05028.JPG" alt=""
-						width="100%">
+					<img class="img-responsive img-full"
+						src="resources/images/noodle.jpg" alt="" style="width: 100%;">
+				</div>
+
+				<div class="item">
+					<img class="img-responsive img-full"
+						src="resources/images/DSC05028.JPG" alt="" width="100%">
 				</div>
 			</div>
 
@@ -70,7 +74,8 @@
 			</a>
 		</div>
 	</div>
-	
-</br>
+
+	</br>
 </body>
 </html>
+<%@ include file="footer.jsp"%>

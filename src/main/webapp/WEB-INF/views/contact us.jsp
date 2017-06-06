@@ -17,6 +17,7 @@
 	rel="stylesheet"></script>
 <title>Insert title here</title>
 </head>
+<%@ include file="header.jsp"%>
 <body>
 	</br>
 	<div class="jumbotron jumbotron-sm">
@@ -92,3 +93,4 @@
 	</div>
 </body>
 </html>
+<%@ include file="footer.jsp"%>

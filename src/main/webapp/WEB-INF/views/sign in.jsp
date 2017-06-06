@@ -1,9 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -17,59 +15,40 @@
 	rel="stylesheet"></script>
 <title>Insert title here</title>
 </head>
-<body>
-<div class="container">
-<form class="form-horizontal" role="form">
-<h2>Registration Form</h2>
-<div class="form-group">
-<label for="firstName" class="col-sm-3 control-label">Full Name</label>
-<div class="col-sm-7">
-<input type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
-<span class="help-block">Last Name, First Name, eg.: mohit,Dhawan</span>
-</div>
-</div>
-<div class="form-group">
-<label for="email" class="col-sm-3 control-label">Email</label>
-<div class="col-sm-7">
-<input type="email" id="email" placeholder="Email" class="form-control">
-</div>
-</div>
-<div class="form-group ">
-<label for="mobile"class="col-sm-3 control-label">Mobile*</label>
-<div class="col-sm-7">
-<input type="text" id="mobile" placeholder="Mobile*" class="form-control">
-</div>
-</div>
-<div class="form-group">
-<label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
-<div class="col-sm-7">
-<input type="date" id="birthDate" class="form-control">
-</div>
-</div>
 
-</div> <!-- /.form-group -->
-<div class="form-group">
-<label class="control-label col-sm-3">Gender</label>
-<div class="col-sm-6">
+<%@ include file="header.jsp"%>
+<body background=" resources/images/restaurant-background.jpg">
+<div class="container">
 <div class="row">
-<div class="col-sm-4">
-<label class="radio-inline">
-<input type="radio" id="femaleRadio" value="Female">Female
-</label>
+<div class="col-md-4 col-md-offset-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"> SIGN-IN FOR ZAIKA</h3>
 </div>
-<div class="col-sm-4">
-<label class="radio-inline">
-<input type="radio" id="maleRadio" value="Male">Male
-</label>
-</div>
-</div>
-<br>
+<div class="panel-body">
+<form accept-charset="UTF-8" role="form">
+<div class="item">
+
+<fieldset>
 <div class="form-group">
-<div class="col-sm-9 col-sm-offset-3">
-<button type="submit" class="btn btn-primary btn-block">Register</button>
+<input class="form-control" placeholder="First name" name="First name" type="text">
 </div>
+<div class="form-group">
+<input class="form-control" placeholder="Last name" name="Last name" type="text" value="">
 </div>
-</form> <!-- /form -->
-</div> <!-- ./container -->
+<div class="form-group">
+<input class="form-control" placeholder="E-mail" name="email" type="E-mail" value="">
+</div>
+<div class="form-group">
+<input class="form-control" placeholder="Mobile-no." name="Mobile-no." type="Mobile-no." value="">
+</div>
+<div class="form-group">
+<input class="form-control" placeholder="Address" name="Address" type="Address" value="">
+</div>
+<input class="btn btn-lg btn-success btn-block" type="submit" value="Sign-in">
+</fieldset>
+
 </body>
+
 </html>
+<%@ include file="footer.jsp"%>
