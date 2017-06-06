@@ -18,7 +18,7 @@
 <title>Insert title here</title>
 </head>
 <%@ include file="header.jsp"%>
-<body>
+<bodybackground="resources/Assets/images/restaurant-background.jpg">
 	</br>
 	<div class="jumbotron jumbotron-sm">
 		<div class="container">

@@ -36,30 +36,30 @@
 			<div class="carousel-inner">
 				<div class="item active">
 					<img class="img-responsive img-full"
-						src="resources/images/tawa_naan_bread.jpg" alt=""
+						src="resources/Assets/images/tawa_naan_bread.jpg" alt=""
 						style="width: 100%;">
 
 				</div>
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="resources/images/images.jpg" alt="" style="width: 100%;">
+						src="resources/Assets/images/images.jpg" alt="" style="width: 100%;">
 				</div>
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="resources/images/DSC05028.jpg" alt="" style="width: 100%;">
+						src="resources/Assets/images/DSC05028.jpg" alt="" style="width: 100%;">
 
 				</div>
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="resources/images/noodle.jpg" alt="" style="width: 100%;">
+						src="resources/images/Assets/noodle.jpg" alt="" style="width: 100%;">
 				</div>
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="resources/images/DSC05028.JPG" alt="" width="100%">
+						src="resources/Assets/images/DSC05028.JPG" alt="" width="100%">
 				</div>
 			</div>
 
