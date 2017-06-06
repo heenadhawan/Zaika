@@ -4,6 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+	rel="stylesheet" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	rel="stylesheet"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -23,27 +34,27 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive img-full" src="images1.jpg" alt=""  style="width: 100%;">
+					<img class="img-responsive img-full" src="resources/images/tawa_naan_bread.jpg" alt=""  style="width: 100%;">
 					
 				</div>
 
 				<div class="item">
-										<img class="img-responsive img-full" src="image1.jpg" alt=""  style="width: 100%;">
+		<img class="img-responsive img-full" src="resources\images\images.jpg" alt=""  style="width: 100%;">
 				</div>
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="images2.jpg" alt="" style="width: 100%;">
+						src="resources\images\DSC05028.jpg" alt="" style="width: 100%;">
 						
 				</div>
 
 				<div class="item">
-					<img class="img-responsive img-full" src="img2.jpg"
+					<img class="img-responsive img-full" src="resources\images\noodle.jpg"
 						alt="" style="width: 100%;">
 				</div>
 
 				<div class="item">
-					<img class="img-responsive img-full" src="img1.jpg" alt="Gym Accessories"
+					<img class="img-responsive img-full" src="resources\images\DSC05028.JPG" alt=""
 						width="100%">
 				</div>
 			</div>

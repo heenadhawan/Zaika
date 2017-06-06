@@ -62,7 +62,7 @@
 			<div class="col-sm-6">
 				<p>
 					<img class="alignnone wp-image-128 size-large"
-						src="restaurantbanner2.jpg"
+						src="resources\images\restaurantbanner2.jpg"
 						alt="Fitness World" height="400" width="600">
 				</p>
 			</div>
