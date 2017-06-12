@@ -4,6 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+    </context-param>
+
+    <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
   <!-- configure Front controller -->
   <servlet>
       <servlet-name>dispatcher</servlet-name>
@@ -15,4 +23,4 @@
       <url-pattern>/</url-pattern>
   </servlet-mapping>
   
-  </web-app>
+</web-app>

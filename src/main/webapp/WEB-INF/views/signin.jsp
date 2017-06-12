@@ -1,23 +1,9 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	rel="stylesheet">
-<link
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-	rel="stylesheet" />
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-	rel="stylesheet"></script>
 <title>Insert title here</title>
 </head>
 
-<%@ include file="header.jsp"%>
-<body background=" resources/Assets/images/restaurant-background.jpg">
+<body background=" images/restaurant-background.jpg">
 <div class="container">
 <div class="row">
 <div class="col-md-4 col-md-offset-4">
@@ -51,4 +37,3 @@
 </body>
 
 </html>
-<%@ include file="footer.jsp"%>
