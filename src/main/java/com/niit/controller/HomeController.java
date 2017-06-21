@@ -5,31 +5,31 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.niit.dao.CategoryDao;
+
 
 @Controller
 public class HomeController {
 
 	@Autowired
-	private CategoryDao categoryDao;
+	
 
 	// mapping for index page
 	@RequestMapping(value = { "/", "/home", "/index" })
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("title", "Home");
-		// passing list of categories
-		mv .addObject("categories",categoryDao.list());
+		
+		
 		mv.addObject("userClickHome", true);
 	
 		return mv;
 	}
 	
 		// mapping for about page
-				@RequestMapping(value = { "/aboutusus" })
+				@RequestMapping(value = { "/aboutus" })
 				public ModelAndView aboutus() {
 					ModelAndView mv = new ModelAndView("index");
-					mv.addObject("title", "aboutusus");
+					mv.addObject("title", "aboutus");
 					mv.addObject("userClickaboutus", true);
 				
 					return mv;
@@ -39,7 +39,7 @@ public class HomeController {
 				public ModelAndView contactus() {
 					ModelAndView mv = new ModelAndView("index");
 					mv.addObject("title", "contactus");
-					mv.addObject("userClickcontact", true);
+					mv.addObject("userClickcontactus", true);
 				
 					return mv;
 					}
@@ -62,6 +62,7 @@ public class HomeController {
 				
 					return mv;
 				}
+			
 
 	}
 	
