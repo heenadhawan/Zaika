@@ -30,16 +30,22 @@
 		<%@ include file="./views/contactus.jsp"%>
 	</c:if>
 
-	<!-- login content part -->
-	 <c:if test="${userClicklogin == true}">
+	<!-- contact us content part -->
+	<c:if test="${userClicklogin == true}">
 		<%@ include file="./views/login.jsp"%>
 	</c:if>
+	
 	
 	
 
 	<!-- register content part -->
 	<c:if test="${userClicksignin == true}">
 		<%@ include file="./views/signin.jsp"%>
+	</c:if>
+	
+	<!-- category  content part -->
+	<c:if test="${userClickAllProducts == true or userClickcategoryProducts == true}">
+		<%@ include file="./views/listproduct.jsp"%>
 	</c:if>
 	
 	

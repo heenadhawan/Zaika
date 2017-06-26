@@ -42,22 +42,13 @@
 				</br>
 				</br>
 				<li><a href="${contextRoot}/home"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<%@ include file="./sidebar.jsp" %>
 				
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown">MENU<span class="caret"></span></a>
-					
-				<ul class="nav navbar-nav navbar-left">
-					<ul class="dropdown-menu">
-						<li><a href="">South Indian</a></li>
-						<li><a href="">North indian</a></li>
-						<li><a href="">Chineese</a></li>
-						<li><a href="">Drinks</a></li>
-						<li><a href="">Sweets</a></li>
-					</ul></li>
-				</ul>
-				<li><a href="${contextRoot}/contactus"> <span class="glyphicon glyphicon-earphone"></span> contact us</a></li>
+				
+								<li><a href="${contextRoot}/contactus"> <span class="glyphicon glyphicon-earphone"></span> contact us</a></li>
                 <li><a href="${contextRoot}/aboutus"> about us</a></li>
-				<li><a href="${contextRoot}/category"> category</a></li>
+				<li><a href="${contextRoot}/category/category"> category</a></li>
+				<li><a href="${contextRoot}/show/all/ products"> view products</a></li>
 			</ul>
 
 		</div>

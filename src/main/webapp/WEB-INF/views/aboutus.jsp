@@ -63,7 +63,7 @@
 			<div class="col-sm-6">
 				<p>
 					<img class="alignnone wp-image-128 size-large"
-						src="./Assets/images/Restaurant-Food.jpg"
+						src="./Assets/images/noodle.jpg"
 						alt=" " height="400" width="600">
 				</p>
 			</div>

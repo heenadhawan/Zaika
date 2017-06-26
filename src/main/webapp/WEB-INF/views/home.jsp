@@ -42,12 +42,12 @@
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="./Assets/images/images.jpg" alt="" style="width: 100%;">
+						src="./Assets/images/noodle.jpg" alt="" style="width: 100%;">
 				</div>
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="./Assets/images/DSC05028.jpg" alt="" style="width: 100%;">
+						src="./Assets/images/tawa_naan_bread.jpg" alt="" style="width: 100%;">
 
 				</div>
 
@@ -58,7 +58,7 @@
 
 				<div class="item">
 					<img class="img-responsive img-full"
-						src="./Assets/images/DSC05028.JPG" alt="" width="100%">
+						src="./Assets/images/maxresdefault.jpg" alt="" width="100%">
 				</div>
 			</div>
 
