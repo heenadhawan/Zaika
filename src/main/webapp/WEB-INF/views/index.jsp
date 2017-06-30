@@ -7,32 +7,36 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.js"></script>
 <title> ZAIKA-${title }</title>
 </head>
 <body>
 <!--navigation bar  -->
 
-	<%@ include file="./views/shared/header.jsp" %>
+<%@ include file="shared/header.jsp" %>  
 
 
 	<!-- home content part -->
 	<c:if test="${userClickHome == true}">
-		<%@ include file="./views/home.jsp"%>
+		<%@ include file="home.jsp"%>
 	</c:if>
 
 	<!-- about us content part -->
 	<c:if test="${userClickaboutus == true}">
-		<%@ include file="./views/aboutus.jsp"%>
+		<%@ include file="aboutus.jsp"%>
 	</c:if>
 
 	<!-- contact us content part -->
 	<c:if test="${userClickcontactus == true}">
-		<%@ include file="./views/contactus.jsp"%>
+		<%@ include file="contactus.jsp"%>
 	</c:if>
 
 	<!-- contact us content part -->
 	<c:if test="${userClicklogin == true}">
-		<%@ include file="./views/login.jsp"%>
+		<%@ include file="login.jsp"%>
 	</c:if>
 	
 	
@@ -40,17 +44,17 @@
 
 	<!-- register content part -->
 	<c:if test="${userClicksignin == true}">
-		<%@ include file="./views/signin.jsp"%>
+		<%@ include file="signin.jsp"%>
 	</c:if>
 	
 	<!-- category  content part -->
 	<c:if test="${userClickAllProducts == true or userClickcategoryProducts == true}">
-		<%@ include file="./views/listproduct.jsp"%>
+		<%-- <%@ include file="listproduct.jsp"%> --%>
 	</c:if>
 	
 	
 	<!--footer section  -->
-	<%@ include file="./views/shared/footer.jsp"%>
+	<%@ include file="shared/footer.jsp"%>
 
 </body>
 </html>

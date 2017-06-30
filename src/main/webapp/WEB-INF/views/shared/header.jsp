@@ -42,7 +42,7 @@
 				</br>
 				</br>
 				<li><a href="${contextRoot}/home"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
-				<%@ include file="./sidebar.jsp" %>
+				<%-- <%@ include file="sidebar.jsp" %> --%>
 				
 				
 								<li><a href="${contextRoot}/contactus"> <span class="glyphicon glyphicon-earphone"></span> contact us</a></li>
