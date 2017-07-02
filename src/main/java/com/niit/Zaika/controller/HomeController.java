@@ -1,6 +1,8 @@
 package com.niit.Zaika.controller;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.zaikabe.dao.CategoryDao;
+import com.niit.zaikabe.dao.ProductDao;
 import com.niit.zaikabe.dto.Category;
+import com.niit.zaikabe.dto.Product;
 
 
 
@@ -17,6 +21,10 @@ import com.niit.zaikabe.dto.Category;
 @Controller
 public class HomeController {
 	
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	@Autowired
+	private ProductDao productDao;
 	
 	@Autowired
 	private CategoryDao categoryDao;
@@ -27,6 +35,9 @@ public class HomeController {
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("title", "Home");
+		
+		logger.info("inside pagecontroller index method - INFo");
+		logger.info("inside pagecontroller index method - DEBUG");
 		//passing thelist of categories
 		mv.addObject("categories",categoryDao.list());
 		mv.addObject("userClickHome", true);
@@ -87,16 +98,16 @@ public class HomeController {
 				public ModelAndView showAllroducts() {
 					ModelAndView mv = new ModelAndView("index");
 					mv.addObject("title", "All Products");
-					//passing thelist of categories
+					//passing the list of categories
 					mv.addObject("categories",categoryDao.list());
-					mv.addObject("userClick AllProducts", true);
+					mv.addObject("userClickAllProducts", true);
 				
 					return mv;
 				}
 				
 				@RequestMapping(value =  "/show/category/{id}/products")
-				public ModelAndView showCategoryProducts(@PathVariable("id") int id) {
-					
+				public ModelAndView showCategoryProducts(@PathVariable("id") int id) 
+				{
 					ModelAndView mv = new ModelAndView("index");
 					//category Dao to fetcha single category
 					Category category=null;
@@ -112,7 +123,28 @@ public class HomeController {
 					return mv;
 				}
 	
+				//view single product//
+				@RequestMapping( value ="/show/{id}/product")
+				public ModelAndView showSingleProduct(@PathVariable int id){
+					ModelAndView mv = new ModelAndView ("index");
+					Product product = productDao.get(id);
+					
+					//update the view count
+product.setViews(product.getViews() + 1);
+productDao.update(product);
+//-------------
+mv.addObject ("tittle",product.getName());
+mv.addObject("product",product);
+mv.addObject("userClickshowProduct",true);
+return mv;
+
+					
+				}
+				
+				
+				
 	}
+
 	
 	
 	

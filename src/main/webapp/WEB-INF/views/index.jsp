@@ -12,6 +12,14 @@
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.js"></script>
 <title> ZAIKA-${title }</title>
+<script>
+window.menu = '${tittle}';
+window.context = '${contextRoot}'
+
+
+
+
+</script>
 </head>
 <body>
 <!--navigation bar  -->
@@ -47,12 +55,18 @@
 		<%@ include file="signin.jsp"%>
 	</c:if>
 	
-	<!-- category  content part -->
+	<!-- products  content part -->
 	<c:if test="${userClickAllProducts == true or userClickcategoryProducts == true}">
-		<%-- <%@ include file="listproduct.jsp"%> --%>
+		 <%@ include file="listproduct.jsp"%> 
+	</c:if>
+	<!-- products  content part -->
+	<c:if test="${userClickShowProduct == true}">
+		 <%@ include file="singleproduct.jsp"%> 
 	</c:if>
 	
 	
+	<!-- self coded java script -->
+	<script  src="${js}/myapp.js"> </script>
 	<!--footer section  -->
 	<%@ include file="shared/footer.jsp"%>
 
