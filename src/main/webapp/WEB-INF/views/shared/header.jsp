@@ -47,8 +47,9 @@
 				
 								<li><a href="${contextRoot}/contactus"> <span class="glyphicon glyphicon-earphone"></span> contact us</a></li>
                 <li><a href="${contextRoot}/aboutus"> about us</a></li>
-				<li><a href="${contextRoot}/category/category"> category</a></li>
-				<li><a href="${contextRoot}/show/all/ products"> view products</a></li>
+				
+				<li id ="listproducts"><a href="${contextRoot}/show/all/ products"> view products</a></li>
+			<li id="manageproducts"><a href="${contextRoot}/manage/products"> Manage products</a></li>
 			</ul>
 
 		</div>

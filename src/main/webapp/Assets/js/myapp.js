@@ -9,6 +9,10 @@ $(function(){
 	case 'All Products':
 		$('#listproduct').addClass('active');
 		break;
+		break;
+	case 'Manage Products':
+		$('#manageproduct').addClass('active');
+		break;
 	default:
 		if(menu=="Home")break;
 	$('#listproducts').addclass('active');
@@ -77,9 +81,20 @@ if($table.lenght){
 	         
 	         
 	}
-	
+	//dissmissing the alert messageafter 4 seconds
 		
+	var $alert = $('.alert ');
+	if($alert.lenght){
 		
+		setTimeout(function(){
+			
+			
+			$alert.fadeOut('slow');
+		}
+		,4000)	
+				
+				
+	}
 	
 	
 

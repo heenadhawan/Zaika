@@ -64,6 +64,10 @@ window.context = '${contextRoot}'
 		 <%@ include file="singleproduct.jsp"%> 
 	</c:if>
 	
+	<!--Manage  products  content part -->
+	<c:if test="${userClickManageProducts == true}">
+		 <%@ include file="manageproducts.jsp"%> 
+	</c:if>
 	
 	<!-- self coded java script -->
 	<script  src="${js}/myapp.js"> </script>
